@@ -49,5 +49,23 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 406px;
 }
 
+.footer li {
+    color: #748194;
+    list-style-type: none;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #748194;
+}
+
+.footer a:hover {
+    color: #FF7737;
+}
+
 
 
