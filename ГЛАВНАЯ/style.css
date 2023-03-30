@@ -19,7 +19,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*footer*/
+
+/*---------------content---------------*/
+
+.item-container {
+
+}
+/*-------------end content--------------*/
+
+
+/*----------------footer---------------*/
 .footer {
   width: 100%;
   background: #000E23;
@@ -66,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer a:hover {
     color: #FF7737;
 }
+/*------------end footer-----------*/
 
 
 
