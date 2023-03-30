@@ -251,10 +251,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------end header-------------*/
 
+
 /*---------------content---------------*/
 
 .item-container {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.item {
+    height: 303px;
+    width: 218px;
+    margin: 10px;
+    background: red;
 }
 /*-------------end content--------------*/
 
