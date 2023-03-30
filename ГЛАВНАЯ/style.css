@@ -21,10 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*footer*/
 .footer {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-
   background: #000E23;
 }
 
@@ -35,5 +32,22 @@ h1, h2, h3, h4, h5, h6 {
 .footer-list {
     color: white;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.end-page {
+    color: #ffffff;
+}
+
+.pay {
+    width: 100%;
+    max-width: 406px;
+}
+
 
 
