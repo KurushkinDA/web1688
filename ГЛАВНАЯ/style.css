@@ -18,7 +18,241 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+/*Container*/
+.container {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    width: 100%;
+}
 
+/*---------------header-------------*/
+.header {
+    background: #FFFFFF;
+    width: 100%;
+}
+.header_inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navbar {
+    justify-self: start;
+    align-self: center;
+    margin: 10px;
+}
+
+.header_logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.intro_logo {
+    justify-self: end;
+    align-self: center;
+}
+
+.intro_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FF7737;
+    justify-self: start;
+    align-self: center;
+}
+
+.shop {
+    cursor: pointer;
+    background: none;
+    border: 0;
+    width: 33.92px;
+    height: 34px;
+    justify-self: end;
+    align-self: center;
+    margin: 10px;
+}
+/*Поисковая строка*/
+.search-block {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.search {
+    background: #FF7737;
+}
+.search input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 1px solid #FF7737;
+    /*border-radius: 5px;*/
+    outline: none;
+    background: #fcfcfc;
+    color: #9E9C9C;
+}
+.search select {
+    position: absolute;
+    top: 0;
+    right: 42px;
+    width: 70px;
+    height: 42px;
+    border: 1px solid #FF7737;
+    background: #ffffff;
+    cursor: pointer;
+}
+.search button {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #FF7737;
+    background: #FF7737;
+    /*border-radius: 0 5px 5px 0;*/
+    cursor: pointer;
+    background-image: url("icons/XMLID_223_.svg");
+    background-repeat : no-repeat;
+    background-position: center;
+}
+.search button:before {
+    /*content: "\f002";*/
+
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+.menu-items {
+    display: flex;
+}
+
+.navbar .nav-container li {
+    list-style: none;
+}
+
+.navbar .nav-container a {
+    text-decoration: none;
+    color: #FF7737;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: -2rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: -10px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    padding: 4px;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+
+    height: 2px;
+    width: 24px;
+    border-radius: 10px;
+    background: #FF7737;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.menu-items {
+    padding-top: 10px;
+    background-color: #FFFFFF;
+
+    height: 300px;
+    width: 183px;
+    transform: translate(-150%);
+    display: block;
+    flex-direction: column;
+    margin-left: -22px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: left;
+}
+
+.menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+/*Тут взаимодейтсвия с чекбоксом*/
+.nav-container input[type="checkbox"]:checked .menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+}
+
+
+/*--------------end header-------------*/
 
 /*---------------content---------------*/
 
