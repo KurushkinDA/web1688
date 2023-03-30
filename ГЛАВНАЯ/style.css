@@ -328,7 +328,7 @@ line-height: 17px;
 color: #FF7737;
 }
 
-.block_2 {
+.nike_img_2 {
 position: absolute;
 width: 200px;
 height: 285px;
@@ -340,8 +340,8 @@ top: 206px;
 position: absolute;
 width: 153px;
 height: 12px;
-left: 243px;
-top: 437px;
+left: 30px;
+top: 230px;
 font-weight: 400;
 font-size: 12px;
 line-height: 15px;
@@ -353,8 +353,8 @@ color: #000000;
 position: absolute;
 width: 88px;
 height: 14px;
-left: 263px;
-top: 464px;
+left: 55px;
+top: 255px;
 font-weight: 500;
 font-size: 14px;
 line-height: 17px;
@@ -362,7 +362,7 @@ line-height: 17px;
 color: #FF7737;
 }
 
-.block_3 {
+.nike_img_3 {
 position: absolute;
 width: 200px;
 height: 284px;
@@ -374,8 +374,8 @@ top: 531px;
 position: absolute;
 width: 174px;
 height: 12px;
-left: 34px;
-top: 761px;
+left: 25px;
+top: 225px;
 font-weight: 400;
 font-size: 12px;
 line-height: 15px;
@@ -386,8 +386,8 @@ color: #000000;
 position: absolute;
 width: 88px;
 height: 14px;
-left: 67px;
-top: 789px;
+left: 60px;
+top: 255px;
 font-weight: 500;
 font-size: 14px;
 line-height: 17px;
@@ -395,7 +395,7 @@ line-height: 17px;
 color: #FF7737;
 }
 
-.block_4 {
+.nike_img_4 {
 position: absolute;
 width: 200px;
 height: 284px;
@@ -407,8 +407,8 @@ top: 531px;
 position: absolute;
 width: 158px;
 height: 12px;
-left: 240px;
-top: 761px;
+left: 25px;
+top: 225px;
 
 font-weight: 400;
 font-size: 12px;
@@ -421,8 +421,8 @@ color: #000000;
 position: absolute;
 width: 88px;
 height: 14px;
-left: 275px;
-top: 789px;
+left: 60px;
+top: 255px;
 
 font-weight: 500;
 font-size: 14px;
@@ -492,7 +492,7 @@ line-height: 17px;
 color: #FF7737;
 }
 
-.block_6 {
+.adik_img_2 {
 position: absolute;
 width: 200px;
 height: 277.29px;
@@ -505,8 +505,8 @@ left: 219px;
 position: absolute;
 width: 155px;
 height: 11.67px;
-top: 1133px;
-left: 240px;
+top: 228px;
+left: 25px;
 font-weight: 400;
 font-size: 12px;
 line-height: 15px;
@@ -518,8 +518,8 @@ color: #000000;
 position: absolute;
 width: 88px;
 height: 13.62px;
-top: 1155px;
-left: 271px;
+top: 250px;
+left: 55px;
 font-weight: 500;
 font-size: 14px;
 line-height: 17px;
@@ -527,7 +527,7 @@ line-height: 17px;
 color: #FF7737;
 }
 
-.block_7 {
+.adik_img_3 {
 position: absolute;
 width: 200px;
 height: 278.59px;
@@ -539,8 +539,8 @@ left: 10px;
 position: absolute;
 width: 177px;
 height: 11.67px;
-top: 1453px;
-left: 29px ;
+top: 228px;
+left: 25px ;
 
 font-weight: 400;
 font-size: 12px;
@@ -553,8 +553,8 @@ color: #000000;
 position: absolute;
 width: 90px;
 height: 16.54px;
-top: 1475px ;
-left: 64px;
+top: 250px ;
+left: 55px;
 font-weight: 500;
 font-size: 14px;
 line-height: 17px;
@@ -562,7 +562,7 @@ line-height: 17px;
 color: #FF7737;
 }
 
-.block_8 {
+.adik_img_4 {
 position: absolute;
 width: 200px;
 height: 278.59px;
@@ -574,8 +574,8 @@ left: 219px;
 position: absolute;
 width: 157px;
 height: 11.67px;
-top: 1453px ;
-left: 245px;
+top: 228px ;
+left: 25px;
 font-weight: 400;
 font-size: 12px;
 line-height: 15px;
@@ -587,8 +587,8 @@ color: #000000;
 position: absolute;
 width: 88px;
 height: 13.62px;
-top: 1475px;
-left: 285px;
+top: 250px;
+left: 55px;
 font-weight: 500;
 font-size: 14px;
 line-height: 17px;
@@ -838,6 +838,12 @@ text-align: center;
 color: #919191;
 }
 
+.search {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
 .search_name {
 position: absolute;
 width: 52px;
@@ -886,6 +892,12 @@ width: 181px;
 height: 146.8px;
 top: 140px;
 left: 6px;
+}
+
+.decor {
+position: relative;
+left: 0px;
+top: 680px;
 }
 
 .decor_name {
@@ -940,6 +952,11 @@ bottom: 203px;
 right: 9px;
 }
 
+.result {
+position: relative;
+left: 0px;
+top: 670px;
+}
 
 .result_name {
 position: absolute;
@@ -1086,3 +1103,432 @@ border: 0;
 color: #000E23;
 background-color: rgba(224, 224, 224, 0);
 }
+
+
+
+
+
+/*Медиазапросы*/
+ @media (min-width: 427px) and (max-width: 630px) {
+
+.header {
+  width: 630px
+}
+
+.header_logo{
+  left: 220px;
+}
+
+
+.shop {
+  left: 352px;
+}
+
+.navbar {
+  position: relative;
+  left: -88px;
+}
+
+.menu-items {
+  margin-left: -75px
+}
+
+
+.nav-container {
+  left: 0px;
+}
+
+/*Searchbox*/
+
+.search_box input {
+
+width: 630px;
+
+}
+
+.search_box button {
+
+left: 565px;
+
+}
+
+.search_box img {
+
+left: 594px;
+
+}
+
+.search_box select {
+
+left: 482px;
+
+}
+
+
+.search_box_2 select {
+
+left: 430px;
+}
+
+.found {
+left: 18px;
+
+}
+
+
+
+
+.nike_name {
+left: 100px;
+}
+
+
+.nike_img_1 {
+left: 60px;
+}
+
+.nike_img_2 {
+  left: 360px;
+}
+
+.nike_img_3 {
+  left: 60px;
+}
+
+.nike_img_4 {
+  left: 360px;
+}
+
+/*Adidas*/
+.adik_name {
+  left: 100px;
+}
+
+
+.adik_img_1 {
+ left: 60px; 
+}
+
+
+.adik_img_2 {
+ left: 360px; 
+}
+
+.adik_img_3 {
+ left: 60px; 
+}
+
+
+.adik_img_4 {
+ left: 360px; 
+}
+
+
+
+/*Watch*/
+
+.watch_name {
+left: 100px;
+}
+
+.watch_img_1 {
+left: 60px; 
+}
+
+.watch_img_2 {
+left: 360px; 
+}
+
+.watch_img_3 {
+left: 60px; 
+}
+
+.watch_img_4 {
+left: 360px; 
+}
+
+
+.partners {
+  left: 102px;
+}
+
+.future {
+  left: 102px;
+}
+
+
+/*Footer*/
+.footer {
+  width: 630px;
+}
+
+.up_btn {
+  left: 290px;
+}
+
+.tg {
+  right: 245px;
+  bottom: 37px;
+}
+
+ }
+
+
+
+
+ @media (min-width: 630px) and (max-width: 850px) {
+
+.header {
+  width: 850px
+}
+
+.header_logo{
+  left: 340px;
+}
+
+
+.shop {
+  left: 450px;
+}
+
+
+.menu-items {
+  margin-left: -55px
+}
+
+.nav-container {
+  left: -190px;
+}
+
+.nav-container .checkbox {
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+
+
+/*Searchbox*/
+
+.search_box input {
+height: 30px;
+width: 850px;
+
+}
+
+.search_box button {
+height: 29px;
+width: 67.85px;
+left: 781px;
+
+}
+
+.search_box img {
+top: 72px;
+left: 809px;
+
+}
+
+.search_box select {
+height: 30px;
+left: 699px;
+
+}
+
+
+.search_box_2 select {
+width: 193px;
+height: 40px;
+left: 590px;
+font-size: 14px;
+}
+
+.found {
+width: 250px;
+left: 55px;
+font-size: 17px;
+
+}
+
+.nike_name {
+  width: 829px;
+}
+
+.nike_img_3 {
+  top: 206px;
+  left: 427px;
+}
+
+.nike_img_4 {
+  top: 206px;
+  left: 637px;
+}
+
+
+
+.adik_name {
+  width: 829px;
+  top: 535px;
+}
+
+.adik_img_1 {
+  top: 600px;
+}
+
+.adik_img_2 {
+  top: 600px;
+}
+
+.adik_img_3 {
+  left: 427px;
+  top: 600px;
+}
+
+.adik_img_4 {
+  left: 637px;
+  top: 600px;
+}
+
+
+
+.watch_name {
+  width: 829px;
+  top: 920px;
+}
+
+.watch_img_1 {
+  top: 980px;
+}
+
+.watch_img_2 {
+  top: 980px;
+}
+
+.watch_img_3 {
+  left: 427px;
+  top: 980px;
+}
+
+.watch_img_4 {
+  left: 637px;
+  top: 980px;
+}
+
+
+.partners {
+  width: 829px;
+  top: 1315px;
+}
+
+
+.tmall {
+  left: 520px;
+}
+
+.taobao {
+  left: 375px;
+}
+
+.shop_1688 {
+  left: 227px;
+}
+
+
+.future {
+  width: 829px;
+  top: 1415px;
+}
+
+.future_title {
+  width: 300px;
+  top: 25px;
+  left: 270px;
+  font-size: 20px;
+}
+
+
+.future_suptitle {
+  width: 300px;
+  left: 266px;
+  top: 62px;
+  font-size: 14px;
+}
+
+
+
+.search {
+  top: 30px;
+}
+
+.decor {
+  top: 710px;
+}
+
+.result {
+  top: 690px;
+}
+
+
+
+/*Footer*/
+.footer {
+  top: 2165px;
+  width: 850px;
+  height: 242px;
+}
+
+.up_btn {
+  top: 2146px;
+  left: 397px;
+}
+
+.tg {
+  right: 335px;
+  bottom: 37px;
+}
+
+.vk {
+  right: 280px;
+}
+
+.pay {
+  left: 300px;
+}
+
+.company {
+  top: 20px;
+  left: 190px;
+  font-size: 12px;
+}
+
+.comp_list {
+  top: 35px;
+  left: 160px;
+  font-size: 10px;
+}
+
+.requisites {
+  right: 185px;
+  top: 20px;
+  font-size: 12px;
+}
+
+.req_list {
+    
+    top: 35px;
+    right: 160px;
+    font-size: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+ }
