@@ -583,16 +583,28 @@ body {
 }
 
 .item-container {
-    margin: 20px;
-    padding: 20px;
+    margin: 5px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+@media screen and (min-width: 390px) {
+    .item {
+        width: 218px;
+        height: 303px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .item {
+        width: 165px;
+        height: 260px;
+    }
+}
+
 .item {
-    width: 218px;
-    height: 303px;
     background: #FFFFFF;
     border-radius: 20px;
     border: solid 1px #FFFFFF;
@@ -600,7 +612,8 @@ body {
     margin: 5px;
 
     display: grid;
-    grid-template-rows: 219px 27px 57px;
+    /*grid-template-rows: 219px 27px 57px;*/
+    grid-template-rows: 10fr 2fr 3fr;
     justify-content: center;
 
 }
@@ -613,7 +626,6 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
-    width: 218px;
 
     display: inline-block; /* Строчно-блочный элемент */
     overflow: hidden; /* Скрываем всё за контуром */
@@ -622,6 +634,8 @@ body {
 .item-image img {
     transition: 1s; /* Время эффекта */
     display: block; /* Убираем небольшой отступ снизу */
+
+    object-fit: cover;
 }
 .item-image img:hover {
     transform: scale(1.1); /* Увеличиваем масштаб */
