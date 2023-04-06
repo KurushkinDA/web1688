@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Восточный Экспресс</title>
+
+</head>
+
+<body>
+	<!-- /.header -->
+	<header class="header" id="header">
+		<div class="uphead_inner">
+			<p>Привет, <a href="#">KurushkinDA!</a></p>
+			<p>|</p>
+			<p><a href="#">Аккаунт</a></p>
+			<p>|</p>
+			<p><a href="#">Поддержка</a></p>
+			<p>|</p>
+			<p><a href="#">Выйти</a></p>
+		</div>
+		<div class="container">
+			<div class="header_inner">
+				<div class="div-nav">
+					<input type="checkbox" class="navbar" id="nav-toggle" hidden>
+					<label for="nav-toggle" class="nav-toggle" onclick></label>
+					<nav class="nav">
+						<label for="nav-toggle" class="nav-toggle" onclick></label>
+
+
+						<ul>
+							<li><a href="#">Главная</a>
+							<li><a href="#">Корзина</a>
+							<li><a href="#">Аккаунт</a>
+							<li><a href="#">Поддержка</a>
+							<li><a href="#">Выйти</a>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header_logo">
+					<a href="#"><img class="intro_logo" src="img/truck_delivery_icon_217691 1.svg" alt=""></a>
+					<a href="#"><h1 class="intro_title">Восточный Экспресс</h1></a>
+				</div>
+
+				<div class="header_search">
+					<form class="search-block">
+						<input type="text" placeholder="Искать здесь...">
+						<select id="selectvalue_desktop">
+							<option>taobao</option>
+							<option>1688</option>
+						</select>
+						<button type="submit"></button>
+					</form>
+				</div>
+				<div class="cart-header">
+					<a href="#"><img src="icons/cart-svgrepo-com 1.svg" alt=""></a>
+					<div class="cart_info">
+						<p class="cart_title">Корзина</p>
+						<p class="cart_total">0 ₽</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="search">
+				<form class="search-block">
+					<input type="text" placeholder="Искать здесь...">
+					<select id="selectvalue_mobile">
+						<option>taobao</option>
+						<option>1688</option>
+					</select>
+					<button type="submit"></button>
+				</form>
+			</div>
+
+		</div>
+
+	</header>
+	<!--content-->
+	<div class="content">
+		<div class="item-block">
+			<div class="cart-top-menu">
+				Ваша корзина:
+				<a href="#">
+					Товаров: 1,
+					Сумма: 1000 ₽
+				</a>
+			</div>
+			<div class="title">
+				<div class="title-text">Корзина</div>
+			</div>
+			<div class="cart">
+				<table >
+					<tbody>
+					<tr class="cart-titles">
+						<td class="cart-titles-column-name"></td>
+						<td class="cart-titles-column-name">Товар</td>
+						<td class="cart-titles-column-name">Цвет</td>
+						<td class="cart-titles-column-name">Модель</td>
+						<td class="cart-titles-column-name">Кол-во</td>
+						<td class="cart-titles-column-name">Удалить</td>
+						<td class="cart-titles-column-name">Цена</td>
+						<td class="cart-titles-column-name">Сумма</td>
+					</tr>
+					<tr class="cart-items">
+						<td class="cart-items-column">
+							<img src="https://img.alicdn.com/bao/uploaded/i1/896683320/O1CN01yx6sFh1aObjKlPDHB_!!0-item_pic.jpg">
+						</td>
+						<td class="cart-items-column"><a href="#">Title</a></td>
+						<td class="cart-items-column">Значение color</td>
+						<td class="cart-items-column">Значение model</td>
+						<td class="cart-items-column"><input id="" type="number" min="0" value="100"></td>
+						<td class="cart-items-column"><a href="#">Удалить</a></td>
+						<td class="cart-items-column">100 ₽</td>
+						<td class="cart-items-column">1000 ₽</td>
+					</tr>
+
+					<tr class="cart-total">
+						<th colspan="8" class="cart-total-sum">Общая сумма: 10000 ₽</th>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="buttons">
+				<div class="buttons-start">
+
+					<button class="buttons-shopping" onClick="location.href='#'">Вернуться к покупкам</button>
+
+				</div>
+				<div class="buttons-end">
+					<form id="refresh" action="" method="post">
+
+						<input class="buttons-shopping" type="submit" value="Обновить корзину">
+					</form>
+					<button class="buttons-checkout" onClick="location.href='#'">Оформить заказ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--footer-->
+	<div class="footer">
+		<div class="row">
+			<div class="col">
+				<p class="footer-title">КОМПАНИЯ</p>
+				<ul class="footer-list">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Оферта</a></li>
+					<li><a href="#">Способы оплаты</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Возврат</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+					<li><a href="#">Описание бесплатной оплаты</a></li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<p class="footer-title">РЕКВИЗИТЫ</p>
+				<ul class="footer-list">
+					<li>Компания: ООО “ФЭСТ ИНЖИНИРИНГ”</li>
+					<li>ИНН: 3918015415</li>
+					<li>КПП: 391801001</li>
+					<li>Банк: ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"</li>
+					<li>Р/счет: 40702810302500085345</li>
+					<li>Кор/счет: 30101810845250000999</li>
+				</ul>
+			</div>
+
+			<div class="col">
+				<img class="pay" src="icons/logo3h.png" alt="Оплата">
+			</div>
+		</div>
+
+		<div class="row end-page">
+			<div class="col">
+				<p>2023 &copy; Восточный Экспресс</p>
+			</div>
+			<div class="col">
+				<p>v1.0.0</p>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
