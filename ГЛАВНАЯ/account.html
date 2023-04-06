@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Восточный Экспресс</title>
+
+</head>
+
+<body>
+<!-- /.header -->
+<header class="header" id="header">
+  <div class="uphead_inner">
+    <p>Привет, <a href="#">KurushkinDA!</a></p>
+    <p>|</p>
+    <p><a href="#">Аккаунт</a></p>
+    <p>|</p>
+    <p><a href="#">Поддержка</a></p>
+    <p>|</p>
+    <p><a href="#">Выйти</a></p>
+  </div>
+  <div class="container">
+    <div class="header_inner">
+      <div class="div-nav">
+        <input type="checkbox" class="navbar" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <nav class="nav">
+          <label for="nav-toggle" class="nav-toggle" onclick></label>
+
+
+          <ul>
+            <li><a href="#">Главная</a>
+            <li><a href="#">Корзина</a>
+            <li><a href="#">Аккаунт</a>
+            <li><a href="#">Поддержка</a>
+            <li><a href="#">Выйти</a>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header_logo">
+        <a href="#"><img class="intro_logo" src="img/truck_delivery_icon_217691 1.svg" alt=""></a>
+        <a href="#"><h1 class="intro_title">Восточный Экспресс</h1></a>
+      </div>
+
+      <div class="header_search">
+        <form class="search-block">
+          <input type="text" placeholder="Искать здесь...">
+          <select id="selectvalue_desktop">
+            <option>taobao</option>
+            <option>1688</option>
+          </select>
+          <button type="submit"></button>
+        </form>
+      </div>
+      <div class="cart-header">
+        <a href="#"><img src="icons/cart-svgrepo-com 1.svg" alt=""></a>
+        <div class="cart_info">
+          <p class="cart_title">Корзина</p>
+          <p class="cart_total">0 ₽</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="search">
+      <form class="search-block">
+        <input type="text" placeholder="Искать здесь...">
+        <select id="selectvalue_mobile">
+          <option>taobao</option>
+          <option>1688</option>
+        </select>
+        <button type="submit"></button>
+      </form>
+    </div>
+
+  </div>
+
+</header>
+<!--content-->
+<div class="content">
+  <div class="message">
+    {% if message %}
+    <div class="alert alert-warning border-2 d-flex align-items-center" role="alert">
+      <div class="bg-warning me-3 icon-item"><span class="fas fa-exclamation-circle text-white fs-3"></span></div>
+      <p class="mb-0 flex-1">{{ message }}</p>
+      <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+  </div>
+
+
+  <div class="account">
+    <div class="account-title">Аккаунт</div>
+    <div class="account-text-after-title">Личная информация пользователя</div>
+    <form name="test" method="post" action="{% url 'shop:account' %}">
+      {% csrf_token %}
+      <div class="col-2">
+        <div class="col">
+          <div class="inp-text">Имя</div>
+          {{form.first_name}}
+        </div>
+        <div class="col">
+          <div class="inp-text">Фамилия</div>
+          {{form.last_name}}
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="col">
+          <div class="inp-text">Email</div>
+          {{form.email}}
+        </div>
+        <div class="col">
+          <div class="inp-text">Телефон</div>
+          {{form.phone}}
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="col">
+          <div class="inp-text">Город</div>
+          {{form.city}}
+        </div>
+        <div class="col">
+          <div class="inp-text">Индекс</div>
+          {{form.zip}}
+        </div>
+      </div>
+      <div class="col">
+        <div class="inp-text">Адрес</div>
+        <input type="text">
+        <input class="input-submit" type="submit" name="submit-user-info" value="Сохранить">
+      </div>
+
+    </form>
+
+    <div class="auth-title">Изменить пароль</div>
+    <form action="#" method="post" >
+      <div class="col-3">
+        <div class="col">
+          <div class="inp-text">Текущий пароль</div>
+          <input type="text">
+        </div>
+        <div class="col">
+          <div class="inp-text">Новый пароль</div>
+          <input>
+        </div>
+        <div class="col">
+          <div class="inp-text">Новый пароль еще раз</div>
+          <input type="text">
+        </div>
+      </div>
+      <div class="col"><input class="input-submit" type="submit" name="submit-change-pas" value="Изменить пароль"></div>
+    </form>
+  </div>
+  <div class="orders">
+    <div class="orders-title">Заказы</div>
+    <div class="orders-text-after-title">Здесь вы можете посмотреть ваши заказы</div>
+    <div class="accordion-menu">
+      <ul>
+        <li>
+          <input type="checkbox" checked>
+          <i class="arrow"></i>
+          <div class="order-title">
+            <h2>Заказ №1</h2>
+            <div class="order-status">
+              <div class="status-yellow"><h2>Не оплачен</h2></div>
+            </div>
+
+          </div>
+          <div class="order-info">
+            <div class="order-created-paid">
+              <div class="order-created">Заказ сформирован: дата</div>
+              <div class="order-paid">Заказ оплачен: нет</div>
+            </div>
+            <div class="order-created-paid">
+              <div class="order-created"></div>
+              <div class="order-paid">Трек номер: нет</div>
+            </div>
+            <div class="order-created-paid">
+              <div class="order-created"></div>
+              <div class="order-paid"></div>
+            </div>
+            <div class="order-created-paid">
+              <div class="order-created">Имя: Имя + Фамилия</div>
+              <div class="order-paid">Телефон: Телефон</div>
+            </div>
+            <div class="order-created-paid">
+              <div class="order-created">Email: Email</div>
+              <div class="order-paid">Адрес: Адрес</div>
+            </div>
+            <div class="order-created-paid">
+              <div class="order-created">Индекс: Индекс</div>
+              <div class="order-paid">Город: Город</div>
+            </div>
+            <div class="order-detail">
+              <div class="order-detail-title">Детали заказа:</div>
+
+              <div class="cart">
+                <table >
+                  <tbody>
+                  <tr class="cart-titles">
+                    <td class="cart-titles-column-name">Товар</td>
+                    <td class="cart-titles-column-name">Цвет</td>
+                    <td class="cart-titles-column-name">Модель</td>
+                    <td class="cart-titles-column-name">Кол-во</td>
+                  </tr>
+                  <tr class="cart-items">
+                    <td class="cart-items-column">Наименование</td>
+                    <td class="cart-items-column">Цвет</td>
+                    <td class="cart-items-column">Модель</td>
+                    <td class="cart-items-column">Кол-во</td>
+                  </tr>
+                  <tr class="cart-total">
+                    <th colspan="8" class="cart-total-sum">Общая сумма: 1000 ₽</th>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="order-detail-paid">
+
+                <form action="#" method="post">
+                  <input type="hidden" name="order_id" value="1">
+                  <button class="btn-success">Успешная оплата</button>
+                </form>
+
+                <form action="#" method="post">
+                  <input type="hidden" name="order_id" value="1">
+                  <button class="btn-wait">Ожидание</button>
+                </form>
+
+              </div>
+            </div>
+            <div class="order-delivery">
+              <div class="order-delivery-title">Этап доставки</div>
+              <div class="wrapper option-1 option-1-1">
+                <ol class="c-stepper">
+                  <li class="c-stepper__item">
+                    <h3 class="c-stepper__title">Шаг</h3>
+                    <p class="c-stepper__desc">Текст к шагу</p>
+                  </li>
+                  <li class="c-stepper__item">
+                    <h3 class="c-stepper__title">Шаг</h3>
+                    <p class="c-stepper__desc">Текст к шагу</p>
+                  </li>
+                  <li class="c-stepper__item">
+                    <h3 class="c-stepper__title">Шаг</h3>
+                    <p class="c-stepper__desc">Текст к шагу</p>
+                  </li>
+                  <li class="c-stepper__item">
+                    <h3 class="c-stepper__title">Шаг</h3>
+                    <p class="c-stepper__desc">Текст к шагу</p>
+                  </li>
+                  <li class="c-stepper__item">
+                    <h3 class="c-stepper__title">Шаг</h3>
+                    <p class="c-stepper__desc">Текст к шагу</p>
+                  </li>
+                </ol>
+              </div>
+              <div class="text-to-support">
+                <form action="#" method="post">
+                  <input type="hidden" name="order" value="1" />
+                  <input class="btn-support" name="support" type="submit" value="Написать в поддержку">
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<!--footer-->
+<div class="footer">
+  <div class="row">
+    <div class="col">
+      <p class="footer-title">КОМПАНИЯ</p>
+      <ul class="footer-list">
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Оферта</a></li>
+        <li><a href="#">Способы оплаты</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Возврат</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Описание бесплатной оплаты</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <p class="footer-title">РЕКВИЗИТЫ</p>
+      <ul class="footer-list">
+        <li>Компания: ООО “ФЭСТ ИНЖИНИРИНГ”</li>
+        <li>ИНН: 3918015415</li>
+        <li>КПП: 391801001</li>
+        <li>Банк: ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"</li>
+        <li>Р/счет: 40702810302500085345</li>
+        <li>Кор/счет: 30101810845250000999</li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <img class="pay" src="icons/logo3h.png" alt="Оплата">
+    </div>
+  </div>
+
+  <div class="row end-page">
+    <div class="col">
+      <p>2023 &copy; Восточный Экспресс</p>
+    </div>
+    <div class="col">
+      <p>v1.0.0</p>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
