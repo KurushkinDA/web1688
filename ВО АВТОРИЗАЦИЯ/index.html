@@ -1,96 +1,51 @@
 <!DOCTYPE html>
-<html lang="rus">
+<html lang="en-US" dir="ltr">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<title>Восточный Экспресс</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Восточный Экспресс | Авторизация</title>
+
+	<link href="style.css" rel="stylesheet">
+
+
 
 </head>
 
+
 <body>
 
-	<div class="authory">
-		<div class="container">
-			<div class="logo"><img src="icons/truck_delivery_icon_217691 1.svg">
-				<h1 class="auth_title">Восточный Экспресс</h1>
+<div class="auth">
+
+		<div class="logo">
+			<div class="img-logo">
+				<img src="icons/truck_delivery_icon_217691%201.svg" alt="Логотип">
 			</div>
-
-			<div class="auth_block">
-				<button class="auth_text">Авторизоваться</button>
-				<span class="or">или</span>
-				<button class="reg_text">Создать аккаунт</button>
-
-				<div class="text-field">
-					<label class="text-field__label" for="login"></label>
-					<input class="text-field__input" type="text" name="login" id="login" placeholder="Логин" value="">
-				</div>
-
-				<div class="text-field_2">
-					<label class="text-field__label_2" for="login"></label>
-					<input class="text-field__input_2" type="text" name="login" id="login" placeholder="Пароль" value="">
-				</div>
-
+			<div class="text-logo">Восточный Экспресс</div>
+		</div>
+		<div class="auth-field">
+			<div class="top">
+				<div class="text-left">Авторизоваться</div>
+				<div class="text-right">или <text class="create_account"><a href="#">Создать аккаунт</a></text></div>
 			</div>
+			<form class="auth-input" method="post">
+				<input type="hidden" name="csrfmiddlewaretoken" value="bxqOmKqK3xYbUeHd8iyzmDomkZHW0mIiud6UmkvQWEh1ufpJeYWZzR1Ma1luxGJk">
 
-			<button class="autorizeit">
-				<span class="atext">Авторизоваться</span>
-			</button>
+				<input type="text" name="username" class="inp" placeholder="Логин" maxlength="150" required id="id_username">
+
+				<input type="password" name="password" class="inp" placeholder="Пароль" required id="id_password">
+
+				<div class="form-error"></div>
+				<button type="submit" class="inp-btn">Авторизоваться</button>
+			</form>
 
 		</div>
-	</div>
 
-
-	</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
 </body>
+
+</html>
