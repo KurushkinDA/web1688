@@ -1,0 +1,312 @@
+body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px, 18px, 50px;
+background-color: #E0E0E0;
+line-height: 1.6;
+width: 100%;
+max-width: 100%;
+overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+ box-sizing: border-box; 
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+
+.authory {
+position: relative;
+width: 430px;
+height: 932px;
+
+background: #E0E0E0;
+}
+
+.logo {
+box-sizing: border-box;
+
+position: absolute;
+width: 56px;
+height: 52px;
+left: 66px;
+top: 140px;
+}
+
+.auth_title {
+position: absolute;
+width: 229px;
+height: 19px;
+left: 70px;
+top: 17px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 550;
+font-size: 20px;
+line-height: 24px;
+
+color: #FF7737;
+}
+
+.auth_block {
+position: absolute;
+width: 398px;
+height: 348px;
+left: 16px;
+top: 192px;
+
+background: #FFFFFF;
+border-radius: 20px;
+}
+
+.auth_text {
+background:none;
+border:none;
+margin:0;
+padding:0;
+cursor: pointer;
+position: absolute;
+width: 128px;
+height: 18px;
+left: 28px;
+top: 29px;
+
+font-weight: 500;
+font-size: 15px;
+
+color: #000000;
+}
+
+.or {
+position: absolute;
+width: 31px;
+height: 18px;
+left: 180px;
+top: 26px;
+
+font-weight: 500;
+font-size: 15px;
+
+color: #B0B0B0;
+
+}
+
+.reg_text {
+background:none;
+border:none;
+margin:0;
+padding:0;
+cursor: pointer;
+position: absolute;
+width: 128px;
+height: 18px;
+left: 231px;;
+top: 29px;
+
+font-weight: 500;
+font-size: 15px;
+color: #FF7737;	
+}
+
+
+.text-field__input {
+  position: absolute;
+	width: 371px;
+	height: 25px;
+	left: 14px;
+	top: 75px;
+  padding: 10px;
+
+  font-size: 13px;
+  font-weight: 400;
+  
+  background-color: #f2f2f2ff;
+  
+  border: 0;
+  border-radius: 15px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.text-field__input_2 {
+  position: absolute;
+	width: 371px;
+	height: 25px;
+	left: 14px;
+	top: 116px;
+  padding: 10px;
+
+  font-size: 13px;
+  font-weight: 400;
+  
+  background-color: #f2f2f2ff;
+  
+  border: 0;
+  border-radius: 15px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.text-field__input_3 {
+  position: absolute;
+	width: 371px;
+	height: 25px;
+	left: 14px;
+	top: 158px;
+  padding: 10px;
+
+  font-size: 13px;
+  font-weight: 400;
+  
+  background-color: #f2f2f2ff;
+  
+  border: 0;
+  border-radius: 15px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.text-field__input_4 {
+  position: absolute;
+	width: 371px;
+	height: 25px;
+	left: 14px;
+	top: 200px;
+  padding: 10px;
+
+  font-size: 13px;
+  font-weight: 400;
+  
+  background-color: #f2f2f2ff;
+  
+  border: 0;
+  border-radius: 15px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.confid {
+position: absolute;
+width: 354px;
+height: 26px;
+left: 32px;
+top: 296px;
+
+font-weight: 500;
+font-size: 11px;
+color: #414141;
+}
+
+.rules {
+position: absolute;
+background: none;
+border: 0;
+cursor: pointer;
+width: 354px;
+height: 26px;
+left: 164px;
+top: 292px;
+
+font-weight: 500;
+font-size: 11px;
+color: #FF7737;
+}
+
+.and {
+position: absolute;
+width: 354px;
+height: 26px;
+left: 33px;
+top: 315px;
+font-weight: 500;
+font-size: 11px;
+
+color: #414141;
+}
+
+.politic {
+position: absolute;
+background: none;
+border: 0;
+cursor: pointer;
+width: 354px;
+height: 26px;
+left: -47px;
+top: 311px;
+
+font-weight: 500;
+font-size: 11px;
+color: #FF7737;
+}
+
+
+.autorizeit {
+position: absolute;
+width: 371px;
+height: 39.89px;
+left: 29px;
+top: 436px;
+cursor: pointer;
+border: 0;
+background: #FF7737;
+border-radius: 15px;
+}
+
+.atext {
+position: absolute;
+width: 153px;
+height: 22px;
+left: 100px;
+top: 8px;
+
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+}
+
+
+
+
+/*Медиазапросы*/
+@media (min-width: 427px) and (max-width: 630px) {
+
+.logo {
+  left: 155px;
+}
+
+.auth_block {
+  left: 110px;
+}
+
+.autorizeit {
+  left: 122px;
+}
+
+}
+
+
+
+@media (min-width: 630px) and (max-width: 850px) {
+
+.logo {
+  left: 270px;
+}
+
+
+.auth_block {
+  left: 220px;
+}
+
+.autorizeit {
+  left: 232px;
+}
+
+
+
+}
