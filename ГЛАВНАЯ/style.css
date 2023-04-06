@@ -776,7 +776,7 @@ body {
 .text-logo {
     display: grid;
     align-items: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     /* identical to box height */
@@ -801,7 +801,7 @@ body {
     background: #FFFFFF;
     border-radius: 20px;
     padding: 20px;
-
+    margin: 20px;
     align-self: start;
 }
 
@@ -827,7 +827,7 @@ a { color: inherit; }
 }
 
 .text-left {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     color: #000000;
@@ -881,7 +881,7 @@ a { color: inherit; }
 .text-right {
 
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
 
@@ -893,7 +893,7 @@ a { color: inherit; }
 }
 
 .create_account {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     /* identical to box height */
@@ -911,19 +911,19 @@ a { color: inherit; }
 
 }
 .auth-input input {
-    width: 100%;
+    width: 300px;
     height: 42px;
     padding-left: 10px;
-    border: 0px;
+    border: 0;
     outline: none;
     background: #F2F2F2;
     color: #9E9C9C;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
 }
 
 .auth-input button {
-    border: 0px;
+    border: 0;
 }
 
 @media screen and (max-width: 770px) {
@@ -950,7 +950,7 @@ a { color: inherit; }
     background: #FF9969;
     border-radius: 15px;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     font-style: normal;
     font-weight: 500;
     /* identical to box height */
@@ -980,3 +980,8 @@ a { color: inherit; }
 
 /*-------------------КОНЕЦ СТРАНИЦЫ АВТОРИЗАЦИИ----------*/
 
+/*-------------------СТРАНИЦА РЕГИСТРАЦИИ-----------------*/
+/*наследуется от авторизации*/
+.privacy {
+    font-size: 14px;
+}

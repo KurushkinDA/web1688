@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Восточный Экспресс | Регистрация</title>
+
+	<link href="style.css" rel="stylesheet">
+
+
+
+</head>
+
+
+<body>
+
+<div class="auth">
+
+		<div class="logo">
+			<div class="img-logo">
+				<img src="icons/truck_delivery_icon_217691%201.svg" alt="Логотип">
+			</div>
+			<div class="text-logo">Восточный Экспресс</div>
+		</div>
+		<div class="auth-field">
+			<div class="top">
+				<div class="text-left">Регистрация</div>
+				<div class="text-right">или <text class="create_account"><a href="#">Авторизоваться</a></text></div>
+			</div>
+			<form class="auth-input" method="post">
+				<input type="hidden" name="csrfmiddlewaretoken" value="S1SsmkLJa8nr7HO2c5HnhltgWztAuKOMbHyymUQP3fGhHIwyiL5Nuz6GMB7814PO">
+
+				<input type="text" name="username" class="inp" placeholder="Логин" autofocus required id="id_username">
+
+				<input type="email" name="email" class="inp" placeholder="Email" required id="id_email">
+
+				<input type="password" name="password1" class="inp" placeholder="Пароль" required id="id_password1">
+
+				<input type="password" name="password2" class="inp" placeholder="Повтор пароля" required id="id_password2">
+
+				<div class="form-error"></div>
+				<button class="inp-btn">Зарегистрироваться</button>
+				<div class="privacy">Нажимая "Зарегистрироваться", Я соглашаюсь с <a href="#">правилами</a>
+					и <a href="#">политикой конфиденциальности</a></div>
+			</form>
+
+		</div>
+
+</div>
+
+
+</body>
+
+</html>
