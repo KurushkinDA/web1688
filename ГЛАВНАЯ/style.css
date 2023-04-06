@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6, p {
 /**
  * Переключаемая боковая панель навигации
  * выдвигающаяся по клику слева
- */
+*/
 
 .nav {
     /*  ширна произвольная, не стесняйтесь экспериментировать */
@@ -577,9 +577,22 @@ body {
     background: #FFFFFF;
     border-radius: 20px;
     margin: 20px;
-    padding: 20px 100px 20px 100px;
+
     text-align: center;
     font-size: 14px;
+}
+
+@media screen and (max-width: 770px) {
+    .text-block {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (min-width: 770px) {
+    .text-block {
+        padding: 20px 100px 20px 100px;
+    }
 }
 
 .item-container {
