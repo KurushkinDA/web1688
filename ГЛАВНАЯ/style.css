@@ -985,3 +985,324 @@ a { color: inherit; }
 .privacy {
     font-size: 14px;
 }
+
+/*-------------------КОНЕЦ СТРАНИЦЫ РЕГИСТРАЦИИ----------*/
+
+/*-------------------СТРАНИЦА ПОИСКА-----------------*/
+/*наследуется от главной*/
+
+/*Стили для пагинации*/
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    margin: 30px auto 50px auto;
+}
+
+.paggroup {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+
+@media screen and (max-width: 770px) {
+    .pagination {
+
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .pagination {
+
+    }
+}
+
+
+.pagbut {
+    background: #F2F2F2;
+    border: 1px solid #B0B0B0;
+    border-radius: 5px;
+
+    height: 40px;
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagbut a {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+
+    height: 100%; /* Высота на весь слой */
+    width: 100%;
+}
+
+.choicebox {
+    height: 40px;
+}
+
+.choicebox input {
+    background: #FFFFFF;
+    border: 1px solid #B0B0B0;
+    border-radius: 5px;
+    height: 38px;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.sumbox {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+
+.pagbox {
+    background: #FFFFFF;
+    border: 0.5px solid #B0B0B0;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.pagbox.active {
+    background: #FF7737;
+    border: 0.5px solid #FF7737;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.pagbox.active a {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+.pagbox a {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
+
+    /* Выравнивание по центру */
+    height: 100%; /* Высота на весь слой */
+}
+
+/* Сортировка */
+
+
+
+.sorting {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width: 770px) {
+    .sorting {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .sort {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        gap: 10px;
+        min-height: 35px;
+    }
+
+    .sort select{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .sorting {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sort {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        gap: 10px;
+    }
+
+    .sort select{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .info {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+.sort {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 10px
+}
+
+.sort a {
+
+    background: #F2F2F2;
+    border: 1px solid #B0B0B0;
+    border-radius: 5px;
+    width: 110px;
+    height: 100%;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
+
+    /* Выравнивание по центру */
+
+}
+
+.sort select {
+    border: 1px solid #B0B0B0;
+    border-radius: 5px;
+
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+
+    height: 100%; /* Высота на весь слой */
+}
+
+.total_results {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+@media screen and (max-width: 770px) {
+    .total_results {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .current_page {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .total_results {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .current_page {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+
+.current_page {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+/*-------------------КОНЕЦ СТРАНИЦЫ РЕГИСТРАЦИИ----------*/
