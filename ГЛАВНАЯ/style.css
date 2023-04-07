@@ -1,3 +1,85 @@
+/*СБРОС ВСЕХ СТИЛЕЙ*/
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/*КОНЕЦ СБРОСА ВСЕХ СТИЛЕЙ*/
+
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -417,6 +499,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
+    gap: 5px;
 }
 
 .header_logo a {
@@ -534,7 +617,7 @@ body {
     position: absolute;
     top: 0;
     right: 42px;
-    width: 70px;
+    width: 75px;
     height: 42px;
     border: 2px solid #FF7737;
     background: #ffffff;
@@ -917,7 +1000,6 @@ a { color: inherit; }
 
 }
 .auth-input input {
-    width: 300px;
     height: 42px;
     padding-left: 10px;
     border: 0;
@@ -935,12 +1017,14 @@ a { color: inherit; }
 @media screen and (max-width: 770px) {
     .auth-input {
         margin-top: 20px;
+        width: 300px;
     }
 }
 
 @media screen and (min-width: 770px) {
     .auth-input {
         margin: 20px;
+        width: -webkit-fill-available;
     }
 }
 
@@ -1546,3 +1630,701 @@ a { color: inherit; }
 
 
 /*-------------------КОНЕЦ КОРЗИНЫ----------*/
+
+/*-------------------АККАУНТ----------*/
+.message {
+    margin-top: 130px;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    background: white;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+    .account {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .account {
+        justify-content: center;
+    }
+}
+
+.account-form {
+    width: 100%;
+    display: flex;
+}
+
+
+.account-title {
+    margin: 0 auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 55px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.account-text-after-title {
+    margin: 10px auto 10px auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.flex-box-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    .flex-box-row {
+        width: 996px;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .flex-box-row {
+        flex-direction: column;
+    }
+}
+
+.col-2 {
+    margin: 20px 0px 0px 0px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.col {
+    margin: 20px 0px 0px 0px;
+    display: grid;
+    gap: 20px;
+}
+
+.inp-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.input-short {
+    background: #F2F2F2;
+    border-radius: 15px;
+    border: 0px;
+
+
+    height: 35px;
+    padding: 0px 5px 0px 5px;
+}
+
+.input-long {
+    background: #F2F2F2;
+    border-radius: 15px;
+    border: 0px;
+
+    height: 35px;
+    padding: 0px 5px 0px 5px;
+}
+
+@media screen and (min-width: 1200px) {
+    .input-long {
+        width: 996px;
+    }
+    .input-short {
+        width: 437px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .input-long {
+        width: 100%;
+    }
+
+    .input-short {
+        width: 100%;
+    }
+}
+
+.input-submit {
+    background: #FF7737;
+    border-radius: 15px;
+    border: 0px;
+    height: 35px;
+    padding: 0px 5px 0px 5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .input-submit {
+        width: 996px;
+    }
+}
+
+
+
+.auth-title {
+    margin: 50px auto 20px auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: black;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+}
+
+.input-mini {
+    background: #F2F2F2;
+    border-radius: 15px;
+    border: 0px;
+
+
+    height: 35px;
+    padding: 0px 5px 0px 5px;
+}
+
+@media screen and (min-width: 1200px) {
+    .input-mini {
+        width: 282px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .input-mini {
+        width: 100%;
+    }
+}
+
+/* Блок Заказы */
+
+.orders {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1196px;
+
+    display: grid;
+    justify-content: center;
+
+    margin-top: 10px;
+    width: 1169px;
+    height: min-content;
+    background: white;
+    border-radius: 20px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.orders-title {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 55px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.orders-text-after-title {
+    margin: 10px auto 10px auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+}
+
+.order-created-paid {
+    margin: 5px 30px 5px 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+/* Accordion заказов */
+/* Пользовательские настройки */
+.order-title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.order-status {
+    display: grid;
+    justify-content: right;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.status-yellow {
+    background: #F9E958;
+    margin-right: 50px;
+    border-radius: 25px;
+    padding: 2px 10px 2px 10px;
+}
+
+.status-red {
+    background: #FDAFAF;
+    margin-right: 50px;
+    border-radius: 25px;
+    padding: 2px 10px 2px 10px;
+}
+
+.status-green {
+    background: #BEEEB9;
+    margin-right: 50px;
+    border-radius: 25px;
+    padding: 2px 10px 2px 10px;
+}
+
+.status-gray {
+    background: #ECECEC;
+    margin-right: 50px;
+    border-radius: 25px;
+    padding: 2px 10px 2px 10px;
+}
+
+
+.btn-success {
+    width: 269px;
+    height: 40px;
+    background: #BEEEB9;
+    border-radius: 20px;
+    border: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.btn-wait {
+    width: 269px;
+    height: 40px;
+    background: #ECECEC;
+    border-radius: 20px;
+    border: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.btn-fail {
+    width: 269px;
+    height: 40px;
+    background: #FDAFAF;
+    border-radius: 20px;
+    border: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.order-detail-title {
+    margin-top: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.order-detail-paid {
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.order-delivery {
+    margin-top: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+
+/* Аккордион заказов */
+/* Стандартные настройки */
+.accordion-menu {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 20px auto;
+    transform: translate(-50%, 0);
+    width: 1000px;
+    padding: 10px 20px 20px;
+    border-radius: 5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.accordion-menu ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0 20px 10px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(255, 255, 255, 0.19);
+}
+.accordion-menu ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-top: 1px dotted #dce7eb;
+}
+
+.accordion-menu ul li:nth-child(1){ border:none; }
+.accordion-menu ul li:nth-of-type(1) { animation-delay: 0.5s; }
+.accordion-menu ul li:nth-of-type(2) { animation-delay: 0.75s; }
+.accordion-menu ul li:nth-of-type(3) { animation-delay: 1.0s; }
+.accordion-menu ul li:last-of-type { padding-bottom: 0; }
+
+.accordion-menu ul li .arrow {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 6px;
+    right: 0;
+}
+.accordion-menu ul li .fas{
+    color:#f6483b;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.accordion-menu ul li .arrow:before, ul li .arrow:after {
+    content: "";
+    position: absolute;
+    background-color: #f6483b;
+    width: 3px;
+    height: 9px;
+}
+.accordion-menu ul li .arrow:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+.accordion-menu ul li .arrow:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+.accordion-menu ul li input[type=checkbox]:checked ~ .order-info {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+.accordion-menu ul li input[type=checkbox]:checked ~ .arrow:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+.accordion-menu ul li input[type=checkbox]:checked ~ .arrow:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+.transition, p, ul li .arrow:before, ul li .arrow:after {
+    transition: all 0.25s ease-in-out;
+}
+
+.flipIn, h1, .accordion-menu ul li {
+    animation: flipdown 0.5s ease both;
+}
+.no-select, h2 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+/*
+@keyframes flipdown {
+    0% {
+        opacity: 0;
+        transform-origin: top center;
+        transform: rotateX(-90deg);
+    }
+
+    5% { opacity: 1; }
+
+    80% { transform: rotateX(8deg); }
+
+    83% { transform: rotateX(6deg); }
+
+    92% { transform: rotateX(-3deg); }
+
+    100% {
+        transform-origin: top center;
+        transform: rotateX(0deg);
+    }
+} */
+
+/* Сброс стилей */
+h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* Для этапа доставки */
+:root {
+    --circle-size: clamp(1.5rem, 5vw, 3rem);
+    --spacing: clamp(0.25rem, 2vw, 0.5rem);
+}
+
+.c-stepper {
+    display: flex;
+    padding: 0px;
+}
+
+.c-stepper__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+.c-stepper__item:before {
+    --size: 3rem;
+    content: "";
+    display: block;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    background-color: #cbcbcb;
+
+    opacity: 0.5;
+    margin: 0 auto 1rem;
+}
+
+.c-stepper__item.active:before {
+    background-color: #2d9627;
+}
+
+.c-stepper__item:not(:last-child):after {
+    content: "";
+    position: relative;
+    top: calc(var(--circle-size) / 2);
+    width: calc(100% - var(--circle-size) - calc(var(--spacing) * 2));
+    left: calc(50% + calc(var(--circle-size) / 2 + var(--spacing)));
+    height: 2px;
+    background-color: #e0e0e0;
+    order: -1;
+}
+
+.c-stepper__title {
+    margin-bottom: 0.5rem;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+.c-stepper__desc {
+    color: grey;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height */
+}
+
+/*** Non-demo CSS ***/
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* */
+
+.text-to-support {
+    display: grid;
+    justify-content: center;
+}
+
+.btn-support {
+    margin: 30px;
+
+    width: 269px;
+    height: 40px;
+    background: #ECECEC;
+    border-radius: 20px;
+    border: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.cart {
+    margin: 20px;
+    display: grid;
+    justify-content: start;
+}
+
+.cart-titles {
+    width: 100%;
+
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 200px 100px 100px 100px 100px;
+
+    font-family: Montserrat;
+    font-size: 16px;
+
+    background: #FFE6DB;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: solid 1px #D9D9D9;
+}
+
+
+
+
+/*-------------------КОНЕЦ АККАУНТА----------*/

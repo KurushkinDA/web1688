@@ -83,76 +83,71 @@
 </header>
 <!--content-->
 <div class="content">
-  <div class="message">
-    {% if message %}
-    <div class="alert alert-warning border-2 d-flex align-items-center" role="alert">
-      <div class="bg-warning me-3 icon-item"><span class="fas fa-exclamation-circle text-white fs-3"></span></div>
-      <p class="mb-0 flex-1">{{ message }}</p>
-      <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    {% endif %}
-  </div>
+<!--  <div class="message">-->
+<!--    <div class="alert alert-warning border-2 d-flex align-items-center" role="alert">-->
+<!--      <div class="bg-warning me-3 icon-item"><span class="fas fa-exclamation-circle text-white fs-3"></span></div>-->
+<!--      <p class="mb-0 flex-1">{{ message }}</p>-->
+<!--      <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>-->
+<!--    </div>-->
+<!--  </div>-->
 
 
   <div class="account">
     <div class="account-title">Аккаунт</div>
     <div class="account-text-after-title">Личная информация пользователя</div>
-    <form name="test" method="post" action="{% url 'shop:account' %}">
-      {% csrf_token %}
-      <div class="col-2">
+    <form class="flex-box-row" name="test" method="post" action="#">
+
         <div class="col">
           <div class="inp-text">Имя</div>
-          {{form.first_name}}
+          <input type="text" name="first_name" value="Дмитрий" class="input-short" required="" id="id_first_name">
         </div>
         <div class="col">
           <div class="inp-text">Фамилия</div>
-          {{form.last_name}}
+          <input type="text" name="last_name" value="Курушкин" class="input-short" required="" id="id_last_name">
         </div>
-      </div>
-      <div class="col-2">
+
+
         <div class="col">
           <div class="inp-text">Email</div>
-          {{form.email}}
+          <input type="text" name="email" value="kurushkin.dimka@yandex.ru" class="input-short" required="" id="id_email">
         </div>
         <div class="col">
           <div class="inp-text">Телефон</div>
-          {{form.phone}}
+          <input type="text" name="phone" class="input-short" required="" id="id_phone">
         </div>
-      </div>
-      <div class="col-2">
+
+
         <div class="col">
           <div class="inp-text">Город</div>
-          {{form.city}}
+          <input type="text" name="city" class="input-short" id="id_city">
         </div>
         <div class="col">
           <div class="inp-text">Индекс</div>
-          {{form.zip}}
+          <input type="text" name="zip" class="input-short" id="id_zip">
         </div>
-      </div>
+
       <div class="col">
         <div class="inp-text">Адрес</div>
-        <input type="text">
+        <input type="text" name="adress" class="input-long" id="id_adress">
         <input class="input-submit" type="submit" name="submit-user-info" value="Сохранить">
       </div>
 
     </form>
 
     <div class="auth-title">Изменить пароль</div>
-    <form action="#" method="post" >
-      <div class="col-3">
+    <form class="flex-box-row" action="#" method="post" >
         <div class="col">
           <div class="inp-text">Текущий пароль</div>
-          <input type="text">
+          <input type="text" name="old_pas" class="input-mini" required="" id="id_old_pas">
         </div>
         <div class="col">
           <div class="inp-text">Новый пароль</div>
-          <input>
+          <input type="text" name="new_pas1" class="input-mini" required="" id="id_new_pas1">
         </div>
         <div class="col">
           <div class="inp-text">Новый пароль еще раз</div>
-          <input type="text">
+          <input type="text" name="new_pas2" class="input-mini" required="" id="id_new_pas2">
         </div>
-      </div>
       <div class="col"><input class="input-submit" type="submit" name="submit-change-pas" value="Изменить пароль"></div>
     </form>
   </div>
