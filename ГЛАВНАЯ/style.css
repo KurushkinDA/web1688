@@ -651,6 +651,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        align-items: inherit;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        align-items: center;
+    }
 }
 
 .category-title {
@@ -1649,12 +1663,14 @@ a { color: inherit; }
 @media screen and (min-width: 1200px) {
     .account {
         align-items: center;
+        width: 1100px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .account {
         justify-content: center;
+        margin: 20px;
     }
 }
 
@@ -1670,12 +1686,24 @@ a { color: inherit; }
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 45px;
-    line-height: 55px;
     /* identical to box height */
 
 
     color: #000000;
+}
+
+@media screen and (max-width: 1200px) {
+    .account-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .account-title {
+        font-size: 45px;
+        line-height: 55px;
+    }
 }
 
 .account-text-after-title {
@@ -1687,6 +1715,7 @@ a { color: inherit; }
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
+    text-align: center;
 
 
     color: #000000;
@@ -1696,8 +1725,12 @@ a { color: inherit; }
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
 
-
+.flex-box-row-space-around {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1722,10 +1755,33 @@ a { color: inherit; }
     gap: 100px;
 }
 
+.col-2-flex {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30%;
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
 .col {
     margin: 20px 0px 0px 0px;
     display: grid;
+    align-items: start;
     gap: 20px;
+}
+
+.col-flex {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .inp-text {
@@ -1734,6 +1790,18 @@ a { color: inherit; }
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.inp-text-sm {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
     /* identical to box height */
 
 
@@ -1852,22 +1920,32 @@ a { color: inherit; }
 /* Блок Заказы */
 
 .orders {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 1196px;
+    margin: 20px;
 
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
 
     margin-top: 10px;
-    width: 1169px;
     height: min-content;
     background: white;
     border-radius: 20px;
 
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
 
+@media screen and (min-width: 1200px) {
+    .orders {
+        align-items: center;
+        width: 1100px;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .orders {
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+    }
 }
 
 .orders-title {
@@ -1892,6 +1970,13 @@ a { color: inherit; }
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
+
+    text-align: center;
+}
+
+.order-params {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .order-created-paid {
@@ -1913,8 +1998,8 @@ a { color: inherit; }
 /* Accordion заказов */
 /* Пользовательские настройки */
 .order-title {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -1928,8 +2013,7 @@ a { color: inherit; }
 }
 
 .order-status {
-    display: grid;
-    justify-content: right;
+
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -1940,6 +2024,19 @@ a { color: inherit; }
 
 
     color: #000000;
+}
+
+@media screen and (max-width: 500px) {
+    .order-status {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .order-status {
+        display: grid;
+        justify-content: right;
+    }
 }
 
 .status-yellow {
@@ -2063,11 +2160,11 @@ a { color: inherit; }
 /* Стандартные настройки */
 .accordion-menu {
     display: inline-block;
-    position: relative;
+    /*position: relative;*/
     left: 50%;
-    margin: 20px auto;
-    transform: translate(-50%, 0);
-    width: 1000px;
+    /*margin: 20px auto;*/
+    /*transform: translate(-50%, 0);*/
+    /*width: 1000px;*/
     padding: 10px 20px 20px;
     border-radius: 5px;
 

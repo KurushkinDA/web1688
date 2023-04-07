@@ -152,8 +152,8 @@
     </form>
   </div>
   <div class="orders">
-    <div class="orders-title">Заказы</div>
-    <div class="orders-text-after-title">Здесь вы можете посмотреть ваши заказы</div>
+    <div class="account-title">Заказы</div>
+    <div class="account-text-after-title">Здесь вы можете посмотреть ваши заказы</div>
     <div class="accordion-menu">
       <ul>
         <li>
@@ -167,34 +167,64 @@
 
           </div>
           <div class="order-info">
-            <div class="order-created-paid">
-              <div class="order-created">Заказ сформирован: дата</div>
-              <div class="order-paid">Заказ оплачен: нет</div>
-            </div>
-            <div class="order-created-paid">
-              <div class="order-created"></div>
-              <div class="order-paid">Трек номер: нет</div>
-            </div>
-            <div class="order-created-paid">
-              <div class="order-created"></div>
-              <div class="order-paid"></div>
-            </div>
-            <div class="order-created-paid">
-              <div class="order-created">Имя: Имя + Фамилия</div>
-              <div class="order-paid">Телефон: Телефон</div>
-            </div>
-            <div class="order-created-paid">
-              <div class="order-created">Email: Email</div>
-              <div class="order-paid">Адрес: Адрес</div>
-            </div>
-            <div class="order-created-paid">
-              <div class="order-created">Индекс: Индекс</div>
-              <div class="order-paid">Город: Город</div>
-            </div>
+              <div class="col-2-flex">
+                  <div class="col-flex">
+                      <div class="inp-text-sm">Заказ сформирован: 12.02.23</div>
+                      <div class="inp-text-sm">Заказ оплачен: нет</div>
+                      <div class="inp-text-sm">Трек номер: нет</div>
+                  </div>
+                  <div class="col-flex">
+                      <div class="inp-text-sm">Имя: Имя + Фамилия</div>
+                      <div class="inp-text-sm">Телефон: Телефон</div>
+                      <div class="inp-text-sm">Email: Email</div>
+                      <div class="inp-text-sm">Адрес: Адрес</div>
+                      <div class="inp-text-sm">Индекс: Индекс</div>
+                      <div class="inp-text-sm">Город: Город</div>
+                  </div>
+              </div>
+
+
+
+
+
+
             <div class="order-detail">
               <div class="order-detail-title">Детали заказа:</div>
 
               <div class="cart">
+                <div class="table-cart-mobile">
+                  <div class="title-cart-mobile"><a href="#">Title</a></div>
+                  <div class="body-cart-mobile">
+                    <div class="img-cart-mobile">
+                      <img src="https://img.alicdn.com/bao/uploaded/i1/896683320/O1CN01yx6sFh1aObjKlPDHB_!!0-item_pic.jpg">
+                    </div>
+                    <div class="values-cart-mobile">
+                      <div class="cart-items-column"><b>Цвет:</b> Белый</div>
+                      <div class="cart-items-column"><b>Модель:</b> Iphone13</div>
+                      <div class="cart-items-column"><b>Количество:</b> <input id="" type="number" min="0" value="100"></div>
+                      <div class="cart-items-column"><a href="#">Удалить из корзины</a></div>
+                      <div class="cart-items-column"><b>Цена:</b> 100 ₽</div>
+                      <div class="cart-items-column"><b>Сумма:</b> 1000 ₽</div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="title-cart-mobile"><a href="#">Title</a></div>
+                  <div class="body-cart-mobile">
+                    <div class="img-cart-mobile">
+                      <img src="https://img.alicdn.com/bao/uploaded/i1/896683320/O1CN01yx6sFh1aObjKlPDHB_!!0-item_pic.jpg">
+                    </div>
+                    <div class="values-cart-mobile">
+                      <div class="cart-items-column"><b>Цвет:</b> Белый</div>
+                      <div class="cart-items-column"><b>Модель:</b> Iphone13</div>
+                      <div class="cart-items-column"><b>Количество:</b> <input id="" type="number" min="0" value="100"></div>
+                      <div class="cart-items-column"><a href="#">Удалить</a></div>
+                      <div class="cart-items-column"><b>Цена:</b> 100 ₽</div>
+                      <div class="cart-items-column"><b>Сумма:</b> 1000 ₽</div>
+                    </div>
+                  </div>
+                  <hr>
+                  Общая сумма: 10000 ₽
+                </div>
                 <table >
                   <tbody>
                   <tr class="cart-titles">
@@ -218,15 +248,7 @@
 
               <div class="order-detail-paid">
 
-                <form action="#" method="post">
-                  <input type="hidden" name="order_id" value="1">
-                  <button class="btn-success">Успешная оплата</button>
-                </form>
 
-                <form action="#" method="post">
-                  <input type="hidden" name="order_id" value="1">
-                  <button class="btn-wait">Ожидание</button>
-                </form>
 
               </div>
             </div>
