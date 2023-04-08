@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/breadcrumbs.css" type="text/css" />
+  <script src="js/jquery.min.js"></script>
+  <title>Восточный Экспресс</title>
+
+</head>
+
+<body>
+<!-- /.header -->
+<header class="header" id="header">
+  <div class="uphead_inner">
+    <p>Привет, <a href="#">KurushkinDA!</a></p>
+    <p>|</p>
+    <p><a href="#">Аккаунт</a></p>
+    <p>|</p>
+    <p><a href="#">Поддержка</a></p>
+    <p>|</p>
+    <p><a href="#">Выйти</a></p>
+  </div>
+  <div class="container">
+    <div class="header_inner">
+      <div class="div-nav">
+        <input type="checkbox" class="navbar" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <nav class="nav">
+          <label for="nav-toggle" class="nav-toggle" onclick></label>
+
+
+          <ul>
+            <li><a href="#">Главная</a>
+            <li><a href="#">Корзина</a>
+            <li><a href="#">Аккаунт</a>
+            <li><a href="#">Поддержка</a>
+            <li><a href="#">Выйти</a>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header_logo">
+        <a href="#"><img class="intro_logo" src="img/truck_delivery_icon_217691 1.svg" alt=""></a>
+        <a href="#"><h1 class="intro_title">Восточный Экспресс</h1></a>
+      </div>
+
+      <div class="header_search">
+        <form class="search-block">
+          <input type="text" placeholder="Искать здесь...">
+          <select id="selectvalue_desktop">
+            <option>taobao</option>
+            <option>1688</option>
+          </select>
+          <button type="submit"></button>
+        </form>
+      </div>
+      <div class="cart-header">
+        <a href="#"><img src="icons/cart-svgrepo-com 1.svg" alt=""></a>
+        <div class="cart_info">
+          <p class="cart_title">Корзина</p>
+          <p class="cart_total">0 ₽</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="search">
+      <form class="search-block">
+        <input type="text" placeholder="Искать здесь...">
+        <select id="selectvalue_mobile">
+          <option>taobao</option>
+          <option>1688</option>
+        </select>
+        <button type="submit"></button>
+      </form>
+    </div>
+
+  </div>
+
+</header>
+<!--content-->
+<div class="content">
+  <div class="item-block">
+    <div class="slider-aria desktop-slider">
+      <div id="main" role="main">
+        <section class="slider">
+          <div id="slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01A0ITnt1aOblVWJvgF_!!896683320.jpg">
+              </li>
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN016bK7SJ1aObc4GoYe2_!!896683320.jpg">
+              </li>
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01nzsPbl1aObd2UDeqr_!!896683320.jpg">
+              </li>
+            </ul>
+          </div>
+          <div id="carousel" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01A0ITnt1aOblVWJvgF_!!896683320.jpg">
+              </li>
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN016bK7SJ1aObc4GoYe2_!!896683320.jpg">
+              </li>
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01nzsPbl1aObd2UDeqr_!!896683320.jpg">
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    <div class="specifications">
+      <div class="item-title" original="{{ item_data.result.item.orig_title }}" translated="{{ item_data.result.item.title }}">Название</div>
+      <div class="sub-title">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Главная</a></li>
+          <li class="breadcrumb-item"><a href="#">Поиск</a></li>
+          <li class="breadcrumb-item"><a href="">Товар</a></li>
+        </ul>
+        <a class="translate-item">Показать оригинальный текст</a>
+      </div>
+
+
+      <div id="main1" role="main" class="mob-slider">
+        <section class="slider">
+          <div id="slider1" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01A0ITnt1aOblVWJvgF_!!896683320.jpg">
+              </li>
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN016bK7SJ1aObc4GoYe2_!!896683320.jpg">
+              </li>
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01nzsPbl1aObd2UDeqr_!!896683320.jpg">
+              </li>
+            </ul>
+          </div>
+          <div id="carousel1" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01A0ITnt1aOblVWJvgF_!!896683320.jpg">
+              </li>
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN016bK7SJ1aObc4GoYe2_!!896683320.jpg">
+              </li>
+              <li>
+                <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01nzsPbl1aObd2UDeqr_!!896683320.jpg">
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+<!--      <div class="item-price">-->
+<!--        <div class="item-price-name-price">Цена</div>-->
+<!--        <div class="item-price-name-quantity">Партия</div>-->
+<!--        <div class="item-price-price">1500 ₽</div>-->
+<!--        <div class="item-price-quantity">от 1 шт</div>-->
+<!--      </div>-->
+      <div class="item-price-2">
+        <div>
+          <table class="table-price-price">
+            <tr>
+              <td class="item-price-name-price">Цена</td>
+              <td class="item-price-price">1500 ₽</td>
+              <td class="item-price-price">2500 ₽</td>
+              <td class="item-price-price">3500 ₽</td>
+            </tr>
+            <tr>
+              <td class="item-price-name-quantity">Партия</td>
+              <td class="item-price-quantity">от 1 шт</td>
+              <td class="item-price-quantity">от 2 шт</td>
+              <td class="item-price-quantity">от 3 шт</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="admin">
+        <div>Ссылка:</div>
+        <div>
+          <a href="#">Перейти</a>
+        </div>
+      </div>
+      <div class="item-delivery">
+        <div class="item-sellername-name">Продавец</div>
+        <div class="item-sellername">
+          Имя продавца
+        </div>
+
+        <div class="item-rating-name-seller-delivery">Рейтинг доставки</div>
+        <div class="item-rating-seller-delivery">1
+          <div class="rating-result">
+            <span class="point"></span>
+          </div>
+        </div>
+        <div class="item-rating-name-seller-item">Рейтинг качества</div>
+        <div class="item-rating-seller-item">1
+          <div class="rating-result">
+            <span class="point"></span>
+          </div>
+        </div>
+        <div class="item-rating-name-seller-service">Рейтинг сервиса</div>
+        <div class="item-rating-seller-service">1
+          <div class="rating-result">
+            <span class="point"></span>
+          </div>
+        </div>
+        <div class="item-rating-name-total-sold">Продано:</div>
+
+        <div class="item-rating-total-sold">
+          10 шт.
+        </div>
+
+
+
+      </div>
+      <div class="item-skus">
+        <div class="item-skus-name">Цвет</div>
+        <div class="item-skus-skus">
+
+          <div class="item-skus-variant active">
+            <div class="item-skus-variant-image">
+              <img src="img/cart-svgrepo-com%201.svg">
+            </div>
+            <div class="item-skus-variant-text" original="{{ item_data.result.item.myskus.0.1 }}" translated="{{ item_data.result.item.myskus.0.0 }}">
+              Какой то параметр
+            </div>
+          </div>
+
+          <div class="item-skus-variant">
+            <div class="item-skus-variant-image">
+
+              <img src="img/cart-svgrepo-com%201.svg">
+
+            </div>
+            <div class="item-skus-variant-text" original="{{ val.1 }}" translated="{{ val.0 }}" >
+              Какой то параметр
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="item-props-mobile">
+        <div class="item-skus-name">Модель</div>
+        <div class="item-props-props">
+          <div class="item-props-variant-mobile">
+            <hr>
+            <div class="item-props-variant-name" original="{{ val.orig_name }}" translated="{{ val.name }}">Название</div>
+            <div class="item-props-variant-desc">
+              <div class="item-props-variant-image">
+                 <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01A0ITnt1aOblVWJvgF_!!896683320.jpg">
+              </div>
+              <div class="item-props-variant-text">
+                <div class="item-props-variant-price"><b>Цена:</b> 1500 ₽</div>
+                <div class="item-props-variant-balance"><b>Остаток:</b>1</div>
+                <div class="item-props-variant-sum"><b>Сумма:</b>1500 ₽</div>
+                <div class="item-props-variant-input"><b>Кол-во:</b>
+                  <form action="#" class="item-mobile-form" method="post">
+                    <tr><th></th><td><input type="number" name="quantity" class="item-props-variant-input-number" step="1" min="0" max="1000" value="1" required id="id_quantity"><input type="hidden" name="update" value="False" id="id_update"></td></tr>
+                    <input type="hidden" name="csrfmiddlewaretoken" value="h7uJmMIiwduNvsXWSMH97zYbNz49tQEuSNllheznJ0Qlsg1dhyh78haRIres08Da">
+                    <input class="item-props-variant-input-btn" type="submit" value="В корзину">
+                  </form>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="item-props-variant-mobile">
+          <hr>
+          <div class="item-props-variant-name" original="{{ val.orig_name }}" translated="{{ val.name }}">Название</div>
+          <div class="item-props-variant-desc">
+            <div class="item-props-variant-image">
+              <img src="https://img.alicdn.com/imgextra/i2/896683320/O1CN01A0ITnt1aOblVWJvgF_!!896683320.jpg">
+            </div>
+            <div class="item-props-variant-text">
+              <div class="item-props-variant-price"><b>Цена:</b> 1500 ₽</div>
+              <div class="item-props-variant-balance"><b>Остаток:</b>1</div>
+              <div class="item-props-variant-sum"><b>Сумма:</b>1500 ₽</div>
+              <div class="item-props-variant-input"><b>Кол-во:</b>
+                <form action="#" class="item-mobile-form" method="post">
+                  <tr><th></th><td><input type="number" name="quantity" class="item-props-variant-input-number" step="1" min="0" max="1000" value="1" required id="id_quantity"><input type="hidden" name="update" value="False" id="id_update"></td></tr>
+                  <input type="hidden" name="csrfmiddlewaretoken" value="h7uJmMIiwduNvsXWSMH97zYbNz49tQEuSNllheznJ0Qlsg1dhyh78haRIres08Da">
+                  <input class="item-props-variant-input-btn" type="submit" value="В корзину">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="item-props-props none">
+          <div class="item-props-variant-title">
+            <div class="item-props-variant-title-name">Модель</div>
+            <div class="item-props-variant-title-column-name"></div>
+            <div class="item-props-variant-title-column-name">Цена</div>
+            <div class="item-props-variant-title-column-name">Остаток</div>
+            <div class="item-props-variant-title-column-name">Сумма</div>
+            <div class="item-props-variant-title-column-name">Кол-во</div>
+          </div>
+
+          <div class="item-props-variant">
+            <div class="item-props-variant-name" original="{{ val.orig_name }}" translated="{{ val.name }}">Название</div>
+            <div class="item-props-variant-image">
+              <img src="img/O1CN01b3psAF2AtagmWwO0B_!!2397808261%201.svg">
+            </div>
+            <div class="item-props-variant-price">1500 ₽</div>
+            <div class="item-props-variant-balance">1 осталось</div>
+            <div class="item-props-variant-sum">1500 ₽</div>
+            <div class="item-props-variant-input">
+
+              <form action="#" method="post">
+                <tr><th></th><td><input type="number" name="quantity" class="item-props-variant-input-number" step="1" min="0" max="1000" value="1" required id="id_quantity"><input type="hidden" name="update" value="False" id="id_update"></td></tr>
+                <input type="hidden" name="csrfmiddlewaretoken" value="h7uJmMIiwduNvsXWSMH97zYbNz49tQEuSNllheznJ0Qlsg1dhyh78haRIres08Da">
+                <input class="item-props-variant-input-btn" type="submit" value="В корзину">
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      <div class="item-props">
+        <div class="item-props-props">
+          <div class="item-props-variant-title">
+            <div class="item-props-variant-title-name">Модель</div>
+            <div class="item-props-variant-title-column-name"></div>
+            <div class="item-props-variant-title-column-name">Цена</div>
+            <div class="item-props-variant-title-column-name">Остаток</div>
+            <div class="item-props-variant-title-column-name">Сумма</div>
+            <div class="item-props-variant-title-column-name">Кол-во</div>
+          </div>
+
+          <div class="item-props-variant">
+
+            <div class="item-props-variant-name" original="{{ val.orig_name }}" translated="{{ val.name }}">Название</div>
+            <div class="item-props-variant-image">
+              <img src="img/cart-svgrepo-com%201.svg">
+
+            </div>
+            <div class="item-props-variant-price">1500 ₽
+            </div>
+            <div class="item-props-variant-balance">1 осталось</div>
+            <div class="item-props-variant-sum">1500 Р
+              ₽</div>
+            <div class="item-props-variant-input">
+              <!--                                item-props-variant-input-number-->
+
+              <form action="#" method="post">
+                <tr><th></th><td><input type="number" name="quantity" class="item-props-variant-input-number" step="1" min="0" max="1000" value="1" required id="id_quantity"><input type="hidden" name="update" value="False" id="id_update"></td></tr>
+                <input type="hidden" name="csrfmiddlewaretoken" value="h7uJmMIiwduNvsXWSMH97zYbNz49tQEuSNllheznJ0Qlsg1dhyh78haRIres08Da">
+                <input class="item-props-variant-input-btn" type="submit" value="В корзину">
+              </form>
+
+              <!--                            <a class="item-props-variant-input-auth" href="/login/">Авторизоваться</a>-->
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="item-props-props none">
+          <div class="item-props-variant-title">
+            <div class="item-props-variant-title-name">Модель</div>
+            <div class="item-props-variant-title-column-name"></div>
+            <div class="item-props-variant-title-column-name">Цена</div>
+            <div class="item-props-variant-title-column-name">Остаток</div>
+            <div class="item-props-variant-title-column-name">Сумма</div>
+            <div class="item-props-variant-title-column-name">Кол-во</div>
+          </div>
+
+          <div class="item-props-variant">
+            <div class="item-props-variant-name" original="{{ val.orig_name }}" translated="{{ val.name }}">Название</div>
+            <div class="item-props-variant-image">
+              <img src="img/O1CN01b3psAF2AtagmWwO0B_!!2397808261%201.svg">
+            </div>
+            <div class="item-props-variant-price">1500 ₽</div>
+            <div class="item-props-variant-balance">1 осталось</div>
+            <div class="item-props-variant-sum">1500 ₽</div>
+            <div class="item-props-variant-input">
+
+              <form action="#" method="post">
+                <tr><th></th><td><input type="number" name="quantity" class="item-props-variant-input-number" step="1" min="0" max="1000" value="1" required id="id_quantity"><input type="hidden" name="update" value="False" id="id_update"></td></tr>
+                <input type="hidden" name="csrfmiddlewaretoken" value="h7uJmMIiwduNvsXWSMH97zYbNz49tQEuSNllheznJ0Qlsg1dhyh78haRIres08Da">
+                <input class="item-props-variant-input-btn" type="submit" value="В корзину">
+              </form>
+
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="description">
+
+    <div class="desc-title">Информация о товаре</div>
+    <div class="desc_t">
+      Информация о товаре
+    </div>
+
+    <div class="desc-atr">
+      <div class="desc-atr-title">Атрибуты товара</div>
+      <div class="desc-atr-body">
+        <span class="desc-atr-atr" original-name="1" translated-name="1" original-value="1" translated-value="1"><b>1</b>: Значение</span>
+      </div>
+    </div>
+    <div class="desc-img">
+      <div class="desc-img-title">Описание товара</div>
+      <div class="desc-img-body">
+        <img class="desc-img-img" src="img/O1CN01b3psAF2AtagmWwO0B_!!2397808261%201.svg" >
+      </div>
+    </div>
+  </div>
+  <script src="js/item.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      // SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 100,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+    $(window).load(function(){
+      $('#carousel1').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 100,
+        itemMargin: 5,
+        asNavFor: '#slider1'
+      });
+
+      $('#slider1').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel1",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+</div>
+
+<!--footer-->
+<div class="footer">
+  <div class="row">
+    <div class="col">
+      <p class="footer-title">КОМПАНИЯ</p>
+      <ul class="footer-list">
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Оферта</a></li>
+        <li><a href="#">Способы оплаты</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Возврат</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Описание бесплатной оплаты</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <p class="footer-title">РЕКВИЗИТЫ</p>
+      <ul class="footer-list">
+        <li>Компания: ООО “ФЭСТ ИНЖИНИРИНГ”</li>
+        <li>ИНН: 3918015415</li>
+        <li>КПП: 391801001</li>
+        <li>Банк: ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"</li>
+        <li>Р/счет: 40702810302500085345</li>
+        <li>Кор/счет: 30101810845250000999</li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <img class="pay" src="icons/logo3h.png" alt="Оплата">
+    </div>
+  </div>
+
+  <div class="row end-page">
+    <div class="col">
+      <p>2023 &copy; Восточный Экспресс</p>
+    </div>
+    <div class="col">
+      <p>v1.0.0</p>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
