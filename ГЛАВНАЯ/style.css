@@ -2014,7 +2014,6 @@ a { color: inherit; }
 
 .order-status {
 
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -2160,6 +2159,7 @@ a { color: inherit; }
 /* Стандартные настройки */
 .accordion-menu {
     display: inline-block;
+    width: 100%;
     /*position: relative;*/
     left: 50%;
     /*margin: 20px auto;*/
@@ -2231,11 +2231,17 @@ input[type=checkbox] {
     z-index: 1;
     opacity: 0;
 }
+
+.order-info {
+    display: block;
+}
+
 .accordion-menu ul li input[type=checkbox]:checked ~ .order-info {
     margin-top: 0;
     max-height: 0;
     opacity: 0;
     transform: translate(0, 50%);
+    display: none;
 }
 .accordion-menu ul li input[type=checkbox]:checked ~ .arrow:before {
     transform: translate(2px, 0) rotate(45deg);
@@ -2292,6 +2298,21 @@ h2 {
 :root {
     --circle-size: clamp(1.5rem, 5vw, 3rem);
     --spacing: clamp(0.25rem, 2vw, 0.5rem);
+}
+
+.mob-stepper {
+    margin: 5px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .mob-stepper {
+        display: none;
+    }
 }
 
 .c-stepper {
