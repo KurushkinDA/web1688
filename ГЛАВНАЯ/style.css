@@ -2642,16 +2642,34 @@ section {
     grid-area: B;
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 20px;
+
 }
 
 .item-price-name-quantity {
     grid-area: C;
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 16px;
+
 
     text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+    .item-price-price {
+        font-size: 16px;
+    }
+    .item-price-quantity {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .item-price-price {
+        font-size: 20px;
+    }
+    .item-price-quantity {
+        font-size: 16px;
+    }
 }
 
 
@@ -2659,7 +2677,6 @@ section {
     grid-area: D;
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 16px;
 }
 
 .table-price-price {
